@@ -20,7 +20,7 @@ namespace GeodataService.Api.Controllers
             _reverseGeocodingService = reverseGeocodingService ?? throw new NullReferenceException(nameof(reverseGeocodingService));
         }
 
-        //Адресс по координатам
+        //РђРґСЂРµСЃСЃ РїРѕ РєРѕРѕСЂРґРёРЅР°С‚Р°Рј
         [HttpGet]
         [Route("address")]
         [ProducesResponseType<IList<ResponseAddressDTO>>(StatusCodes.Status200OK)]
@@ -58,7 +58,7 @@ namespace GeodataService.Api.Controllers
             }
             
         }
-        //Координаты по адресу
+        //РљРѕРѕСЂРґРёРЅР°С‚С‹ РїРѕ Р°РґСЂРµСЃСѓ
         [HttpGet]
         [Route("coordinates")]
         [ProducesResponseType<CoordinatesDTO>(StatusCodes.Status200OK)]

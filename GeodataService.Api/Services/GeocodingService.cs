@@ -2,7 +2,6 @@
 using GeodataService.Api.Services.Contracts;
 using Microsoft.AspNetCore.Http.Extensions;
 using Newtonsoft.Json;
-using System.Net.Http;
 
 namespace GeodataService.Api.Services
 {
