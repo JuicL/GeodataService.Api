@@ -22,7 +22,7 @@ namespace GeodataService.Api.Controllers
 
         //Адресс по координатам
         [HttpGet]
-        [Route("address")]
+        [Route("addresses")]
         [ProducesResponseType<IList<ResponseAddressDTO>>(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
